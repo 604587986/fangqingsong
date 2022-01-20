@@ -1,9 +1,7 @@
 <script>
-  import Header from "../components/Header.svelte";
-  let name = "world";
+  // 主要处理的相关绑定
+  import Router from "svelte-spa-router";
+  import routes from "./routes/index.js";
 </script>
-
-<div>
-  <Header />
-  <h1>Hello {name}!</h1>
-</div>
+<!-- 这个是官方的链接跳转路由 -->
+<Router {routes}/>
